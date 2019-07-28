@@ -89,17 +89,31 @@ body{
     padding-right: 20px;
     list-style-type: none;
 }
-@media only screen and (max-width: 1920px) and (max-height: 1080px){
-    .satu1 {
-        padding-left: 42%;
-    }
-}
 .divs3 {
     margin-top: 65px;
     position: fixed;
     height: 50px;
     width: 100%;    
     background-color: rgba(255, 255, 255, 0.904);
+    transition: 0.8s;
+}
+
+@media only screen and (max-width: 874px){
+    .divs3 {
+        margin-top: 120px;
+    }
+    .satu1{
+        padding-left: 40%;
+    }
+    .satu{}
+}
+@media only screen and (max-width: 574px){
+    .divs3 {
+        margin-top: 180px;
+    }
+    .satu1{
+        padding-left: 20%;
+    }
 }
 /* isi */
 .bg-1 {
@@ -107,21 +121,12 @@ body{
     /* background-position-y: -50px; */
     height: 900px;
     width: 100%;
-}
-@media only screen and (max-width: 1680px) and (max-height: 1050px){
-    .satu{
-        padding-left: 42%;
-    }
-    .satu1 {
-        padding-left: 49%;
-    }
-    .bg-1{
-        width: 150%;
-        background-position-x: 400px;
-    }
+    transition: 0.5s;
 }
 .text-bg {
-    padding: 100px 118px 100px 220px;
+    padding-top: 120px;
+    padding-bottom: 100px;
+    padding-left: 13%;
     float: left;
 }
 .photo {
@@ -131,17 +136,22 @@ body{
     background-size: cover;
     border: 10px solid rgba(0, 0, 0, 0.61);
     float: left;
+    transition: 0.5s;
 }
 .text-split {
     text-align: left;
     background-color: rgba(0, 0, 0, 0.466);
     height: auto;
     padding: 100px 40px;
-    border-radius: 6px;
+    border-top-right-radius: 300px ;
+    border-bottom-left-radius: 60px;
     width: 1000px;
-    margin-left: 100px;
-    margin-top: -70px;
+    /* margin-left: 100px; */
+    /* margin-top: -70px; */
     float: left;
+    transition: 0.5s;
+} .text-split:hover {
+    background-color: rgba(255, 68, 0, 0.678);
 }
 .text-split p {
     font-family: 'Raleway', sans-serif;
@@ -175,18 +185,23 @@ body{
     font-family: 'Bangers', cursive;
     font-size: 100px;
     padding-left: 40px;
+    cursor: pointer;
+    transition: 0.8s;
+} #profil:hover{
+    color: rgba(255, 68, 0, 0.507);
 }
-
+.photo:hover {
+    border: 10px solid rgba(175, 10, 10, 0.61);
+}
 /* Project */
 .project-bg{
     background-image: url('./img/escheresque_ste.png');
     height: auto;
-    width: 1735px;
+    width: 100%;
     display: inline-block;
-    padding-top: 40px;
-    padding-left: 100px; 
+    padding-top: 40px; 
     padding-bottom: 100px;
-    margin-left: 70px;
+    /* margin-left: 70px; */
 }
 
 #pname {
@@ -204,7 +219,7 @@ body{
     height: 300px;
     width: 500px;
     float: left;
-    margin-left: 1%;
+    margin-left: 7%;
     filter: blur(2px);
 }
 .p-one:hover {
